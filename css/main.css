@@ -1,1 +1,167 @@
 @charset "UTF-8";
+
+#wrap{}
+
+/* header 영역 */
+#header{
+    background-color: #fff;
+}
+
+.header_inner{
+    width: 100%;
+    max-width: 1100px;
+    height: 78px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    /* border: 1px solid red; */
+}
+
+.select_language{
+    /* border: 1px solid black; */
+    width: 25%;
+    text-align: left;
+    font-size: 1.1em;
+    position: relative;
+    padding-top: 12px;
+}
+
+.select_language .t_lang{
+    font-size: 12px;
+}
+
+.select_language .t_lang i{
+    position: absolute;
+    top: 20px; left: 80px;
+}
+
+.select_language .t_lang i.icon-angle-up{opacity: 0;}
+.select_language.show .t_lang i.icon-angle-up{opacity: 1;}
+
+.select_language .t_lang i.icon-angle-down{}
+.select_language.show .t_lang i.icon-angle-down{opacity: 0;}
+
+.select_language.show .select_lang_list{visibility: visible;}
+
+.select_lang_list{
+    width: 80%;
+    border: 1px solid #333;
+    background-color: #fff;
+    padding: 12px;
+    box-shadow: 0 3px 3px rgba(0,0,0,0.3);
+    position: absolute;
+    left: 0; top: 40px;
+    visibility: hidden;
+}
+
+.select_lang_list li{}
+
+.select_lang_list li a{
+    display: block;
+    font-size: 12px;
+    padding: 5px 10px;
+}
+
+.logo{
+    /* border: 1px solid red; */
+    align-self: center;
+}
+
+.logo a{}
+
+.logo a img{
+    width: 165px;
+}
+
+.header_link{
+    width: 25%;
+    padding-top: 12px;
+    text-align: right;
+}
+
+.header_link a{
+    display: inline-block;
+    margin: 0 5px;
+    font-size: 12px;
+}
+
+.header_link a.h_search{}
+
+.nav{}
+
+.nav_inner{
+    width: 100%;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.gnb_menu{
+    display: flex;
+    justify-content: center;
+    height: 50px;
+    position: relative;
+}
+
+.gnb_menu > li{
+    padding: 5px 20px;
+}
+
+.gnb_menu > li > a{
+    display: block;
+    font-size: 14px;
+    color: #777;
+}
+
+.sub{
+    width: 100%;
+    height: 30px;
+    border-top: 1px solid #ddd;
+}
+
+.sub li{
+    padding: 8px 20px;
+}
+
+.sub li a{
+    display: block;
+    font-size: 13px;
+    color: #777;
+}
+
+.sub.sub2{
+    display: flex;
+    justify-content: space-around;
+    max-width: 1100px;
+    position: absolute;
+    left: 0; top: 30px;
+}
+
+.sub.sub3{
+    display: flex;
+    justify-content: center;
+    max-width: 1100px;
+    position: absolute;
+    left: 0; top: 30px;
+}
+
+.sub.sub4{
+    display: flex;
+    justify-content: center;
+    max-width: 1100px;
+    position: absolute;
+    left: 0; top: 30px;
+}
+
+.sub.sub5{
+    display: flex;
+    justify-content: center;
+    max-width: 1100px;
+    position: absolute;
+    left: 0; top: 30px;
+}
+
+/* main 영역 */
+#main{}
+
+/* footer 영역 */
+#footer{}

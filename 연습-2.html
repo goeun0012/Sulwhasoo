@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>hover</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <style type="text/css">
+        .box{
+            width: 300px;
+            height: 350px;
+            border: 1px solid #ddd;
+            float: left;
+            margin: 0 20px;
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center top;
+            position: relative;
+            cursor: url("img/icons8-search-50.png"), auto;
+            transition: all 0.3s;
+            overflow: hidden;
+        }
+
+        .box:hover{
+            background-position: center -20px;
+        }
+
+        .box1{background-image: url("img/384071782_thumbnail.jpg");}
+        .box2{background-image: url("img/visu_mo_01.jpg");}
+        .box3{background-image: url("img/new_img_01_mo.jpg");}
+
+        .circle{
+            width: 1000px;
+            height: 500px;
+            border-radius: 50%;
+            background-color: rgba(255,255,255,0);
+            position: absolute;
+            left: 50%; top: 100%;
+            transform: translateX(-50%);
+            text-align: center;
+            padding: 30px;
+            transition: all 0.3s;
+        }
+
+        .box:hover .circle{
+            top: 75%;
+            background-color: rgba(255,255,255,1);
+        }
+
+        .circle .p1{
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="box box1">
+        <div class="circle">
+            <p class="p1">@123456789</p>
+            <p class="p2">ABCD EFG HIJKL MN OPQR STU VWYZ</p>
+        </div><!-- circle -->
+    </div><!-- box -->
+
+    <div class="box box2">
+        <div class="circle">
+            <p class="p1">@123456789</p>
+            <p class="p2">ABCD EFG HIJKL MN OPQR STU VWYZ</p>
+        </div><!-- circle -->
+    </div><!-- box -->
+
+    <div class="box box3">
+        <div class="circle">
+            <p class="p1">@123456789</p>
+            <p class="p2">ABCD EFG HIJKL MN OPQR STU VWYZ</p>
+        </div><!-- circle -->
+    </div><!-- box -->
+</body>
+</html>
